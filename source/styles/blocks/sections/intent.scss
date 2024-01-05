@@ -1,7 +1,15 @@
 // .intent {}
 
 .intent__wrapper {
-  margin: 20px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+  }
 }
 
 .intent__list {
@@ -9,5 +17,15 @@
 
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
