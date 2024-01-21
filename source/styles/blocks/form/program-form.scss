@@ -90,6 +90,7 @@
 
 .program-form__notice {
   display: block;
+  padding: 0 20px;
   margin: 0 auto;
   color: $primary-color;
   font-family: $content-font;
@@ -101,6 +102,7 @@
   @media (min-width: $tablet-width) {
     justify-self: start;
     width: 100%;
+    padding: 0;
 
     @include font-set(16px, 16px);
     text-align: start;
